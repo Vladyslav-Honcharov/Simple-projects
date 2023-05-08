@@ -1,0 +1,82 @@
+@import "mixins";
+.instagram {
+  margin-top: 70px;
+  margin-bottom: 42px;
+  &__page {
+    display: none;
+  }
+  &-img {
+    margin-top: 13px;
+
+    &:not(:nth-child(1)) {
+      display: none;
+    }
+    & img {
+      width: 301px;
+      height: 301px;
+    }
+  }
+}
+@media (min-width: $md2) {
+  .title {
+    @include fontstyle(700, 16px, 22px);
+  }
+  .instagram {
+    background: rgb(246, 243, 243);
+
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 47px;
+    padding-bottom: 42px;
+    &__page {
+      display: block;
+      @include fontstyle(700, 13px, 22px);
+      color: #4e4e4e;
+    }
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+    }
+    &__content {
+      display: flex;
+    }
+
+    &-img {
+      margin-top: 13px;
+      &:not(:nth-child(4)) {
+        display: block;
+      }
+      &:nth-child(2) {
+        padding: 0px 10px;
+      }
+
+      & img {
+        max-width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
+@media (min-width: $md3) {
+  .instagram {
+    &-img {
+      margin-top: 13px;
+      &:nth-child(4) {
+        display: block;
+      }
+      &:nth-child(2) {
+        padding: 0px 10px;
+      }
+      &:nth-child(3) {
+        padding: 0px 10px 0px 0px;
+      }
+      & img {
+        min-width: 285px;
+        height: 285px;
+      }
+    }
+  }
+}

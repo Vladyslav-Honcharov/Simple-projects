@@ -1,0 +1,67 @@
+@import "mixins";
+.main {
+  margin-top: 38px;
+
+  &__content {
+    margin-top: 23px;
+
+    &-title {
+      margin-top: 10px;
+      @include fontstyle(700, 14px, 30px);
+    }
+    &-subtitle {
+      @include fontstyle(400, 11px, 20px);
+      color: #7c7c7c;
+      margin-bottom: 28px;
+    }
+    &-text {
+      display: none;
+    }
+  }
+}
+.title {
+  @include fontstyle(700, 14px, 22px);
+
+  text-transform: uppercase;
+}
+@media (min-width: $md2) {
+  .title {
+    @include fontstyle(700, 16px, 22px);
+  }
+  .main {
+    &__item {
+      display: flex;
+    }
+    &__item-text {
+      margin-left: 20px;
+    }
+    &__content {
+      margin-top: 56px;
+      &-title {
+        @include fontstyle(700, 16px, 30px);
+        margin-top: 0px;
+      }
+      &-subtitle {
+        @include fontstyle(700, 12px, 20px);
+        margin-bottom: 5px;
+      }
+      &-text {
+        display: block;
+        @include fontstyle(400, 14px, 26px);
+        color: rgba(92, 92, 92, 1);
+        width: 404px;
+      }
+      &-img {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+@media (min-width: $md3) {
+  .main {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

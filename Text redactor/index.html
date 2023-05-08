@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text redactor</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="first">
+        <div class="block top-block">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="center-block">
+          <input type="button" value="edit" class="btn-edit" />
+          <input type="button" value="style" class="btn-style" />
+        </div>
+
+        <div class="block bottom-block">
+          <div class="edit-block">
+            <textarea class="edit-area"></textarea>
+            <input type="button" value="add" class="btn-add" />
+            <input type="button" value="save" class="btn-save" />
+          </div>
+          <div class="style-block">
+            <form>
+              <div class="form-size">
+                <h2>Font size</h2>
+                <input
+                  type="radio"
+                  onclick="fontSize()"
+                  name="size"
+                  value="12px"
+                /><span>12px</span>
+                <input
+                  type="radio"
+                  onclick="fontSize()"
+                  name="size"
+                  value="14px"
+                /><span>14px</span>
+                <input
+                  type="radio"
+                  onclick="fontSize()"
+                  name="size"
+                  value="16px"
+                /><span>16px</span>
+                <input
+                  type="radio"
+                  onclick="fontSize()"
+                  name="size"
+                  value="18px"
+                /><span>18px</span>
+                <input
+                  type="radio"
+                  onclick="fontSize()"
+                  name="size"
+                  value="20px"
+                /><span>20px</span>
+              </div>
+
+              <div class="form-family">
+                <h2>Font family</h2>
+                <select name="" id="fontFamily">
+                  <option value="">Choose option</option>
+                  <option value="cursive">cursive</option>
+                  <option value="fantasy">fantasy</option>
+                  <option value="monospace">monospace</option>
+                  <option value="sans-serif">sans-serif</option>
+                </select>
+              </div>
+
+              <div class="form-color">
+                <h2>Color</h2>
+                <input
+                  type="button"
+                  value="color of text"
+                  class="btn-text-color"
+                />
+                <input
+                  type="button"
+                  value="color of background"
+                  class="btn-bg-color"
+                />
+                <div class="color-text hide">
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                </div>
+                <div class="color-bg hide">
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="second">
+        <div class="block">
+          <h2>Choose what you want:</h2>
+          <form class="table-list-radio" name="tableListRadio">
+            <input type="radio" name="choose" /><span>table</span>
+            <input type="radio" name="choose" /><span>list</span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

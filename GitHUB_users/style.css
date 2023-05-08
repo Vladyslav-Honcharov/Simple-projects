@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: url("img/course-img.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+form {
+  align-self: center;
+  padding-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+label {
+  color: aqua;
+  font-size: 30px;
+}
+input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  width: 10vw;
+  height: 3vh;
+  border-radius: 5px;
+  color: #fff;
+  min-width: 100px;
+}
+button {
+  background: none;
+  border: none;
+  color: aquamarine;
+  font-size: 25px;
+  margin-left: 50px;
+}
+button:hover {
+  cursor: pointer;
+}
+ul {
+  margin-left: 15vw;
+  margin-top: 10vh;
+}
+li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+a {
+  cursor: pointer;
+  color: darkgray;
+  text-decoration: none;
+}
